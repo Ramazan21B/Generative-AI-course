@@ -58,8 +58,8 @@ def get_bot_response(user_input: str) -> str:
 def main():
     print("Сейчас с вами работает AI-бот на базе OpenAI:", MODEL)
     while True:
-        user_input = input("Введите ваш вопрос (или 'выход'): ").strip()
-        if user_input.lower() in ("выход", "exit"):
+        user_input = input("Введите ваш вопрос (или 'exit'): ").strip()
+        if user_input.lower() in ("exit"):
             print("Спасибо за использование AI-бота. До свидания!")
             break
         print("AI-бот:", get_bot_response(user_input))
